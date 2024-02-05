@@ -1,9 +1,10 @@
 <script>
 export default {
-  name: 'Pokedex'
+  name: 'Pokedex',
+
 }
 </script>
 
 <template></template>
 
-<script></script>
+<style lang="scss"></style>
