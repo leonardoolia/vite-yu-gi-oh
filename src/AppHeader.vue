@@ -4,6 +4,8 @@ export default {
 }
 </script>
 
-<main></main>
+<template>
+    <header class="container"></header>
+</template>
 
 <style></style>
