@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-    <section id="pokemon" class="my-5">
+    <section id="pokemon">
 
         <div class="pokedex">
             <PokemonCard v-for="pokemon in store.pokemons" :key="pokemon._id" :image-url="pokemon.imageUrl"
@@ -26,9 +26,17 @@ export default {
 .pokedex {
     display: flex;
     flex-wrap: wrap;
+    background-color: #565b60;
+    padding: 10px;
 }
 
 .pokedex>* {
     flex-basis: calc(100% / 5);
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
 }
 </style>

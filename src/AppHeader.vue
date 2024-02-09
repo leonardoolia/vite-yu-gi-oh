@@ -1,6 +1,12 @@
 <script>
+import SearchBar from './components/SearchBar.vue';
 export default {
-    name: 'AppHeader'
+    name: 'AppHeader',
+    components: { SearchBar },
+    props: {
+        types: Array
+    },
+    emits: ['type-change']
 }
 </script>
 
@@ -12,13 +18,20 @@ export default {
             <div class="button button-yellow"></div>
             <div class="button button-green"></div>
         </div>
+        <SearchBar class="searchbar" :options="types" @option-change="$emit('type-change', $event)" />
     </header>
 </template>
 
 <style lang='scss' scoped>
 header {
     min-height: 100px;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 100px 0 100px
+}
+
+.searchbar {
+    height: 40px;
 }
 
 .container {
