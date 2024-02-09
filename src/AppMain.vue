@@ -7,11 +7,13 @@ export default {
 </script>
 
 <template>
-    <main class="container">
-        <PokemonList />
+    <main>
+        <div class="container">
+            <PokemonList />
+        </div>
     </main>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use './assets/scss/style.scss';
 </style>

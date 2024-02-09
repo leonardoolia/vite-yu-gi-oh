@@ -6,7 +6,7 @@ export default {
 
 <template>
     <header>
-        <div class="container">
+        <div class="container ">
             <div class="button button-blue"></div>
             <div class="button button-red"></div>
             <div class="button button-yellow"></div>
@@ -18,13 +18,13 @@ export default {
 <style lang='scss' scoped>
 header {
     min-height: 100px;
-    background-color: #b71b1b;
     padding: 10px;
 }
 
 .container {
     display: flex;
     align-items: center;
+    gap: 10px
 }
 
 .button {

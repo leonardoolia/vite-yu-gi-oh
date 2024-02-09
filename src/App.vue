@@ -18,10 +18,14 @@ export default {
 </script>
 
 <template>
-  <AppHeader />
-  <AppMain />
+  <div class="poke-container">
+    <AppHeader />
+    <AppMain />
+  </div>
 </template>
 
 <style lang="scss">
-@use './assets/scss/style.scss';
+.poke-container {
+  background-color: #b71b1b;
+}
 </style>
